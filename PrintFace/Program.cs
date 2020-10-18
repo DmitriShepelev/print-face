@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace PrintFace
 {
@@ -9,7 +9,7 @@ namespace PrintFace
         /// </summary>
         public static void Main()
         {
-            Console.WriteLine("  Hello, world! ");
+            Console.WriteLine("Hello, world!");
         }
 
         /// <summary>
@@ -18,7 +18,7 @@ namespace PrintFace
         /// <param name="userName">Name of user.</param>
         public static void SayHelloUser(string userName)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(value: $"Hello, {userName}!");
         }
         
         /// <summary>
@@ -27,11 +27,15 @@ namespace PrintFace
         ///  (| o o |)
         ///   |  ^  |
         ///   | '-' |
-        ///   +-----+
+        ///   +-----+.
         /// </summary>
         public static void PrintFace()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($" +\"\"\"\"\"+");
+            Console.WriteLine($"(| o o |)");
+            Console.WriteLine($" |  ^  |");
+            Console.WriteLine($" | '-' |");
+            Console.WriteLine($" +-----+");
         }
     }
 }
