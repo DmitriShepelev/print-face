@@ -20,7 +20,7 @@ namespace PrintFace
         {
             Console.WriteLine(value: $"Hello, {userName}!");
         }
-        
+
         /// <summary>
         /// Print this face.
         ///   +"""""+
@@ -31,11 +31,12 @@ namespace PrintFace
         /// </summary>
         public static void PrintFace()
         {
-            Console.WriteLine($" +\"\"\"\"\"+");
-            Console.WriteLine($"(| o o |)");
-            Console.WriteLine($" |  ^  |");
-            Console.WriteLine($" | '-' |");
-            Console.WriteLine($" +-----+");
+            string krasauchyk = " +\"\"\"\"\"+,(| o o |), |  ^  |, | '-' |, +-----+";
+            var lines = krasauchyk.Split(',');
+            foreach (var s in lines)
+            {
+                Console.WriteLine(s);
+            }
         }
     }
 }
